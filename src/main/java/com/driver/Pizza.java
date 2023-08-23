@@ -74,20 +74,20 @@ public class Pizza {
         if(!isBillGenerated){
             this.bill += "Base Price Of The Pizza: "+ price+ "\n";
             if(isCheeseAdded){
-                this.bill = this.bill + "Extra Cheese Added " + this.cheesePrice + "\n";
+                this.bill = this.bill + "Extra Cheese Added: " + this.cheesePrice + "\n";
             }
             if(isToppingsAdded){
                 if(isVeg){
-                this.bill = this.bill + "Extra Toppings Added " + 70 + "\n";
+                this.bill = this.bill + "Extra Toppings Added: " + 70 + "\n";
                 }
                 else{
-                    this.bill = this.bill + "Extra Toppings Added " + 120 + "\n";
+                    this.bill = this.bill + "Extra Toppings Added: " + 120 + "\n";
                 }
             }
             if(isTakeAwayAdded){
                 this.bill = this.bill + "PaperBag Added " + this.takeAwayPrice + "\n";
             }
-            this.bill += "Total Price Of The Pizza: " + this.totalPrice + "\n";
+            this.bill += "Total Price: " + this.totalPrice + "\n";
             isBillGenerated = true;
         }
         return this.bill;
