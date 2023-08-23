@@ -19,7 +19,7 @@ public class Pizza {
     public Pizza(Boolean isVeg){
         this.isVeg = isVeg;
         // your code goes here
-        this.cheesePrice = 120;
+        this.cheesePrice = 80;
         this.takeAwayPrice = 20;
 
         if(isVeg){
