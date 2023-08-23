@@ -33,12 +33,13 @@ public class Pizza {
         this.isCheeseAdded = false;
         this.isTakeAwayAdded = false;
         this.isToppingsAdded = false;
+        this.isBillGenerated = false;
 
         this.bill = "";
     }
 
     public int getPrice(){
-        return this.price;
+        return this.totalPrice;
     }
 
     public void addExtraCheese(){
